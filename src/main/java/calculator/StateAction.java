@@ -20,6 +20,7 @@ public class StateAction extends State {
 
     @Override
     void equal(Context context) {
+        context.y = context.x;
         context.state = new StateAnswer();
         context.state.equal(context);
     }

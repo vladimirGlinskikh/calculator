@@ -9,10 +9,10 @@ public class ContextTest {
     @Test
     public void run() {
         Context context = new Context();
-        assertEquals(0, context.run("C"));
-        assertEquals(2, context.run("C2"));
-        assertEquals(25, context.run("C25"));
-        assertEquals(6, context.run("с2+3"));
+        assertEquals(0, context.run("c"));
+        assertEquals(2, context.run("c2"));
+        assertEquals(25, context.run("c25"));
+        assertEquals(5, context.run("c2+3="));
         assertEquals(343256, context.run("C343256"));
         assertEquals(777, context.run("C123+654="));
         assertEquals(8, context.run("C2+2*2="));
