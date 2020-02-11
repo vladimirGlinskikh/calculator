@@ -21,6 +21,7 @@ public class StateX extends State {
 
     @Override
     void equal(Context context) {
-
+        context.state = new StateAnswer();
+        context.state.equal(context);
     }
 }
