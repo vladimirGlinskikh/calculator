@@ -3,12 +3,10 @@ package calculator;
 public class StateAnswer extends State {
     @Override
     void clear(Context context) {
-
     }
 
     @Override
     void digit(Context context, char key) {
-
     }
 
     @Override

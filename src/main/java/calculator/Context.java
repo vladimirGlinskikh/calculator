@@ -6,6 +6,11 @@ public class Context {
     char o;
     State state;
 
+    public Context() {
+        state = new StateX();
+        state.clear(this);
+    }
+
     public void press(char key) {
         switch (key) {
             case 'c':
@@ -39,5 +44,15 @@ public class Context {
         for (char key : keys.toCharArray())
             press(key);
         return x;
+    }
+
+    @Override
+    public String toString() {
+        return "Context{" +
+                "x=" + x +
+                ", y=" + y +
+                ", o=" + o +
+                ", state=" + state +
+                '}';
     }
 }

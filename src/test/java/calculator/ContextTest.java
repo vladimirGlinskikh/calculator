@@ -9,9 +9,6 @@ public class ContextTest {
     @Test
     public void run() {
         Context context = new Context();
-//        int actual = context.run("с2+3");
-//        int expect = 6;
-//        assertEquals(expect, actual);
         assertEquals(0, context.run("C"));
         assertEquals(2, context.run("C2"));
         assertEquals(25, context.run("C25"));

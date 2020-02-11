@@ -3,12 +3,14 @@ package calculator;
 public class StateX extends State {
     @Override
     void clear(Context context) {
-
+        context.x = 0;
+        context.y = 0;
+        context.o = '+';
     }
 
     @Override
     void digit(Context context, char key) {
-
+        context.x = context.x * 10 + Character.getNumericValue(key);
     }
 
     @Override
