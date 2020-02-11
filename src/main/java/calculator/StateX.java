@@ -15,7 +15,8 @@ public class StateX extends State {
 
     @Override
     void arifm(Context context, char key) {
-
+        context.state = new StateAction();
+        context.state.arifm(context, key);
     }
 
     @Override
