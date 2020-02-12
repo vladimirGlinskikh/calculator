@@ -1,0 +1,1 @@
+Just maded simple calculator with pattern State. :)
