@@ -15,7 +15,7 @@ public class ContextTest {
         assertEquals(5, context.run("c2+3="));
         assertEquals(343256, context.run("C343256"));
         assertEquals(777, context.run("C123+654="));
-        assertEquals(8, context.run("C2+2*2="));
+        assertEquals(8, context.run("c2+2*2="));
         assertEquals(10, context.run("C5+="));
         assertEquals(200, context.run("C250-50="));
         assertEquals(20, context.run("C100/5="));

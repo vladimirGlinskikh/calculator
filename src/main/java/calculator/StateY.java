@@ -1,6 +1,8 @@
 package calculator;
 
 public class StateY extends State {
+    boolean typing = false;
+
     @Override
     void clear(Context context) {
         context.state = new StateX();
@@ -9,6 +11,10 @@ public class StateY extends State {
 
     @Override
     void digit(Context context, char key) {
+        if (!typing) {
+            context.y = 0;
+            typing = true;
+        }
         context.y = context.y * 10 + Character.getNumericValue(key);
     }
 
